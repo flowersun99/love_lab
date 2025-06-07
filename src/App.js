@@ -128,7 +128,7 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: 24,
+        padding: "32px 8px 32px 8px",
       }}>
         {/* 상단 로고 */}
         <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 32, width: 70, maxWidth: "28vw" }} />
@@ -149,9 +149,9 @@ function App() {
             alignItems: "center",
             justifyContent: "center",
             width: "100%",
-            maxWidth: 320,
-            margin: "32px auto 0 auto",
-            padding: "14px 0",
+            maxWidth: 240,
+            margin: "24px auto 0 auto",
+            padding: "10px 0",
             background: "#ef61ac",
             color: "#fff",
             border: "none",
@@ -177,7 +177,7 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-start",
-        padding: 24,
+        padding: "32px 8px 32px 8px",
       }}>
         <div style={{ fontSize: 24, color: "#fff", fontWeight: 700, marginTop: 48, marginBottom: 24 }}>
           제출 완료
@@ -222,6 +222,7 @@ function App() {
               type="submit"
               style={{
                 width: "100%",
+                maxWidth: 240,
                 padding: "10px 0",
                 background: "#ef61ac",
                 color: "#fff",
@@ -250,7 +251,7 @@ function App() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "flex-start",
-        padding: 24,
+        padding: "32px 8px 32px 8px",
       }}>
         {/* 상단 로고 */}
         <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 32, width: 70, maxWidth: "28vw" }} />
@@ -288,7 +289,14 @@ function App() {
             <div style={{ fontSize: 17, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
               Q{step + 1}.
             </div>
-            <div style={{ fontSize: 13, color: "#444", marginBottom: 36, whiteSpace: "pre-line" }}>
+            <div style={{
+              fontSize: 13,
+              color: "#444",
+              marginBottom: 36,
+              whiteSpace: "pre-line",
+              maxWidth: 320,
+              margin: "0 auto 36px auto"
+            }}>
               {questions[step].question.split('\n').map((line, idx) => (
                 <React.Fragment key={idx}>
                   {line}
@@ -310,9 +318,9 @@ function App() {
                 style={{
                   display: "block",
                   width: "100%",
-                  maxWidth: 320,
-                  margin: "18px auto",
-                  padding: "11px 0",
+                  maxWidth: 240,
+                  margin: "24px auto",
+                  padding: "10px 0",
                   background: "#ef61ac",
                   color: "#fff",
                   border: "none",
