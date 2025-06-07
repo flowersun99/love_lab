@@ -127,16 +127,17 @@ function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        padding: 16,
       }}>
         {/* 상단 로고 */}
-        <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 40, width: 100 }} />
+        <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 40, width: 80, maxWidth: "30vw" }} />
         {/* 타이틀 */}
-        <div style={{ marginTop: 80, textAlign: "center" }}>
-          <div style={{ fontSize: 32, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
+        <div style={{ marginTop: 60, textAlign: "center" }}>
+          <div style={{ fontSize: 28, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
             LOVE CODE
           </div>
-          <div style={{ fontSize: 16, color: "#0a2342", marginBottom: 60 }}>
+          <div style={{ fontSize: 15, color: "#0a2342", marginBottom: 40 }}>
             연애 심리 어플리케이션
           </div>
         </div>
@@ -147,21 +148,22 @@ function App() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            width: 400,
+            width: "90%",
+            maxWidth: 400,
             margin: "40px auto 0 auto",
-            padding: "22px 0",
+            padding: "18px 0",
             background: "#ef61ac",
             color: "#fff",
             border: "none",
             borderRadius: 30,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: 500,
             cursor: "pointer",
             boxShadow: "0 4px 20px rgba(239,97,172,0.15)",
             letterSpacing: 1
           }}
         >
-          <span style={{ fontSize: 20, marginRight: 12 }}>❯</span> START
+          <span style={{ fontSize: 18, marginRight: 10 }}>❯</span> START
         </button>
       </div>
     );
@@ -174,25 +176,27 @@ function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
+        padding: 16,
       }}>
-        <div style={{ fontSize: 40, color: "#fff", fontWeight: 700, marginTop: 80, marginBottom: 40 }}>
+        <div style={{ fontSize: 32, color: "#fff", fontWeight: 700, marginTop: 60, marginBottom: 30 }}>
           제출 완료
         </div>
         <div style={{
           background: "#fff",
           borderRadius: 20,
           boxShadow: "0 4px 20px rgba(239,97,172,0.10)",
-          width: 400,
-          padding: 40,
+          width: "100%",
+          maxWidth: 400,
+          padding: 24,
           textAlign: "center",
-          marginBottom: 40
+          marginBottom: 30
         }}>
-          <div style={{ fontSize: 24, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
+          <div style={{ fontSize: 20, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
             제출 완료
           </div>
           <hr style={{ border: "none", borderTop: "2px solid #ef61ac", width: 60, margin: "16px auto" }} />
-          <div style={{ fontSize: 16, color: "#222", marginBottom: 24 }}>
+          <div style={{ fontSize: 15, color: "#222", marginBottom: 20 }}>
             결과페이지 내용을 입력하여 주세요.<br /><br />
             <b>더 자세한 상담을 원하신다면<br />휴대폰 번호나 카카오톡 아이디를 알려주세요!</b>
           </div>
@@ -203,12 +207,12 @@ function App() {
               value={contact}
               onChange={e => setContact(e.target.value)}
               style={{
-                width: "90%",
-                padding: "12px",
+                width: "95%",
+                padding: "10px",
                 borderRadius: 8,
                 border: "1px solid #ef61ac",
-                marginBottom: 20,
-                fontSize: 16
+                marginBottom: 16,
+                fontSize: 15
               }}
               required
               disabled={sending || sent}
@@ -218,15 +222,15 @@ function App() {
               type="submit"
               style={{
                 width: "100%",
-                padding: "16px 0",
+                padding: "13px 0",
                 background: "#ef61ac",
                 color: "#fff",
                 border: "none",
                 borderRadius: 30,
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: 500,
                 cursor: sending || sent ? "not-allowed" : "pointer",
-                marginBottom: 10
+                marginBottom: 8
               }}
               disabled={sending || sent}
             >
@@ -245,18 +249,19 @@ function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
+        padding: 16,
       }}>
         {/* 상단 로고 */}
-        <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 40, width: 100 }} />
+        <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 40, width: 80, maxWidth: "30vw" }} />
         {/* 진행률 바 */}
-        <div style={{ width: 400, margin: "30px auto 0 auto" }}>
-          <div style={{ fontSize: 14, color: "#888", textAlign: "right" }}>
+        <div style={{ width: "100%", maxWidth: 400, margin: "30px auto 0 auto" }}>
+          <div style={{ fontSize: 13, color: "#888", textAlign: "right" }}>
             {step + 1} / {questions.length}
           </div>
           <div style={{
             width: "100%",
-            height: 12,
+            height: 10,
             background: "#eee",
             borderRadius: 8,
             overflow: "hidden",
@@ -278,12 +283,12 @@ function App() {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
             transition={{ duration: 0.4 }}
-            style={{ marginTop: 60, textAlign: "center" }}
+            style={{ marginTop: 40, textAlign: "center" }}
           >
-            <div style={{ fontSize: 32, color: "#ef61ac", fontWeight: 600, marginBottom: 20 }}>
+            <div style={{ fontSize: 24, color: "#ef61ac", fontWeight: 600, marginBottom: 16 }}>
               Q{step + 1}.
             </div>
-            <div style={{ fontSize: 18, color: "#444", marginBottom: 100, whiteSpace: "pre-line" }}>
+            <div style={{ fontSize: 15, color: "#444", marginBottom: 60, whiteSpace: "pre-line" }}>
               {questions[step].question.split('\n').map((line, idx) => (
                 <React.Fragment key={idx}>
                   {line}
@@ -304,14 +309,15 @@ function App() {
                 }}
                 style={{
                   display: "block",
-                  width: 400,
-                  margin: "20px auto",
-                  padding: "18px 0",
+                  width: "90%",
+                  maxWidth: 400,
+                  margin: "16px auto",
+                  padding: "14px 0",
                   background: "#ef61ac",
                   color: "#fff",
                   border: "none",
                   borderRadius: 30,
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: 500,
                   cursor: "pointer",
                   boxShadow: "0 2px 8px rgba(239,97,172,0.08)",
