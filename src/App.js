@@ -96,8 +96,9 @@ function App() {
     e.preventDefault();
     setSending(true);
     setSent(false);
+
     try {
-      const res = await fetch('http://harivzqpnc.us18.qoddiapp.com/send', {
+      const res = await fetch('http://211.200.56.45:5000/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contact }),
