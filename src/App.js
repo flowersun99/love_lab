@@ -135,10 +135,10 @@ function App() {
         <img src="https://ddstatic.net/1743049048113-0026583.png" alt="logo" style={{ marginTop: 32, width: 70, maxWidth: "28vw" }} />
         {/* 타이틀 */}
         <div style={{ marginTop: 40, textAlign: "center" }}>
-          <div style={{ fontSize: 22, color: "#ef61ac", fontWeight: 600, marginBottom: 8 }}>
+          <div style={{ fontSize: 20, color: "#ef61ac", fontWeight: 600, marginBottom: 8 }}>
             LOVE CODE
           </div>
-          <div style={{ fontSize: 13, color: "#0a2342", marginBottom: 32 }}>
+          <div style={{ fontSize: 12, color: "#0a2342", marginBottom: 32 }}>
             연애 심리 어플리케이션
           </div>
         </div>
@@ -180,7 +180,7 @@ function App() {
         justifyContent: "flex-start",
         padding: "32px 8px 32px 8px",
       }}>
-        <div style={{ fontSize: 24, color: "#fff", fontWeight: 700, marginTop: 48, marginBottom: 24 }}>
+        <div style={{ fontSize: 22, color: "#fff", fontWeight: 700, marginTop: 48, marginBottom: 24 }}>
           제출 완료
         </div>
         <div style={{
@@ -193,11 +193,11 @@ function App() {
           textAlign: "center",
           marginBottom: 24
         }}>
-          <div style={{ fontSize: 16, color: "#ef61ac", fontWeight: 600, marginBottom: 8 }}>
+          <div style={{ fontSize: 15, color: "#ef61ac", fontWeight: 600, marginBottom: 8 }}>
             제출 완료
           </div>
           <hr style={{ border: "none", borderTop: "2px solid #ef61ac", width: 50, margin: "12px auto" }} />
-          <div style={{ fontSize: 13, color: "#222", marginBottom: 16 }}>
+          <div style={{ fontSize: 12, color: "#222", marginBottom: 16 }}>
             결과페이지 내용을 입력하여 주세요.<br /><br />
             <b>더 자세한 상담을 원하신다면<br />휴대폰 번호나 카카오톡 아이디를 알려주세요!</b>
           </div>
@@ -213,7 +213,7 @@ function App() {
                 borderRadius: 8,
                 border: "1px solid #ef61ac",
                 marginBottom: 14,
-                fontSize: 13
+                fontSize: 12
               }}
               required
               disabled={sending || sent}
@@ -222,14 +222,13 @@ function App() {
             <button
               type="submit"
               style={{
-                width: "100%",
-                maxWidth: 240,
+                width: "240px",
                 padding: "10px 0",
                 background: "#ef61ac",
                 color: "#fff",
                 border: "none",
                 borderRadius: 30,
-                fontSize: 14,
+                fontSize: 13,
                 fontWeight: 500,
                 cursor: sending || sent ? "not-allowed" : "pointer",
                 marginBottom: 6
@@ -287,11 +286,11 @@ function App() {
             transition={{ duration: 0.4 }}
             style={{ marginTop: 28, textAlign: "center" }}
           >
-            <div style={{ fontSize: 17, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
+            <div style={{ fontSize: 16, color: "#ef61ac", fontWeight: 600, marginBottom: 10 }}>
               Q{step + 1}.
             </div>
             <div style={{
-              fontSize: 13,
+              fontSize: 12,
               color: "#444",
               marginBottom: 36,
               whiteSpace: "pre-line",
@@ -318,15 +317,14 @@ function App() {
                 }}
                 style={{
                   display: "block",
-                  width: "100%",
-                  maxWidth: 240,
+                  width: "240px",
                   margin: "24px auto",
                   padding: "10px 0",
                   background: "#ef61ac",
                   color: "#fff",
                   border: "none",
                   borderRadius: 30,
-                  fontSize: 14,
+                  fontSize: 13,
                   fontWeight: 500,
                   cursor: "pointer",
                   boxShadow: "0 2px 8px rgba(239,97,172,0.08)",
