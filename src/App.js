@@ -97,7 +97,7 @@ function App() {
     setSending(true);
     setSent(false);
     try {
-      const res = await fetch('https://api.qoddi.com/push/?key=jdwvf5h87e31yoz6atpx24ubglsqik9rmnc/send', {
+      const res = await fetch('http://harivzqpnc.us18.qoddiapp.com/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contact }),
