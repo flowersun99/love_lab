@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/love_lab/static/css/main.e6c13ad2.css",
-    "main.js": "/love_lab/static/js/main.8f2d9268.js",
+    "main.js": "/love_lab/static/js/main.0b1caac4.js",
     "static/js/453.d7450aa3.chunk.js": "/love_lab/static/js/453.d7450aa3.chunk.js",
     "index.html": "/love_lab/index.html",
     "main.e6c13ad2.css.map": "/love_lab/static/css/main.e6c13ad2.css.map",
-    "main.8f2d9268.js.map": "/love_lab/static/js/main.8f2d9268.js.map",
+    "main.0b1caac4.js.map": "/love_lab/static/js/main.0b1caac4.js.map",
     "453.d7450aa3.chunk.js.map": "/love_lab/static/js/453.d7450aa3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8f2d9268.js"
+    "static/js/main.0b1caac4.js"
   ]
 }
